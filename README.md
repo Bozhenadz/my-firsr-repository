@@ -1,2 +1,2 @@
-# my-firsr-repository
-My first repository on GitHub
+# Web (from-end) програмування 
+Репозиторій Дзендзик Божени Василівни 
