@@ -1,1 +1,292 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
+ul[class],
+ol[class] {
+	padding: 0;
+	list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+article>*+* {
+	margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+.bg-light-brown {
+	background-color: #f0a30a;
+}
+
+.bg-light-purple {
+	background-color: #d80073;
+	color: #ffffff;
+}
+
+.bg-bisque {
+	background-color: bisque;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 1.5;
+}
+
+.top-section {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+
+.row {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block {
+	height: 300px;
+	background-color: #d5e8d4;
+	border: 0.3rem solid #000000;
+	margin: 20px 0;
+}
+
+.block__caption {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.block__caption-text {
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	border-bottom: 0.3rem solid #000000;
+	border-left: 0.3rem solid #000000;
+	font-size: 25px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.block__content {
+	margin: 20px;
+	overflow-y: auto;
+	height: calc(100% - 80px);
+	font-size: 20px;
+}
+
+[class^="col-lg-"],
+[class^="col-md-"],
+[class^="col-sm-"] {
+	padding: 0 15px;
+	flex-grow: 1;
+}
+
+@media (min-width: 993px) {
+	.col-lg-1 {
+		width: 8.33%;
+	}
+
+	.col-lg-2 {
+		width: 16.66%;
+	}
+
+	.col-lg-3 {
+		width: 25%;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-5 {
+		width: 41.66%;
+	}
+
+	.col-lg-6 {
+		width: 50%;
+	}
+
+	.col-lg-7 {
+		width: 58.33%;
+	}
+
+	.col-lg-8 {
+		width: 66.66%;
+	}
+
+	.col-lg-9 {
+		width: 75%;
+	}
+
+	.col-lg-10 {
+		width: 83.33%;
+	}
+
+	.col-lg-11 {
+		width: 91.66%;
+	}
+
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.col-md-1 {
+		width: 8.33%;
+	}
+
+	.col-md-2 {
+		width: 16.66%;
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33%;
+	}
+
+	.col-md-5 {
+		width: 41.66%;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-7 {
+		width: 58.33%;
+	}
+
+	.col-md-8 {
+		width: 66.66%;
+	}
+
+	.col-md-9 {
+		width: 75%;
+	}
+
+	.col-md-10 {
+		width: 83.33%;
+	}
+
+	.col-md-11 {
+		width: 91.66%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-1 {
+		width: 8.33%;
+	}
+
+	.col-sm-2 {
+		width: 16.66%;
+	}
+
+	.col-sm-3 {
+		width: 25%;
+	}
+
+	.col-sm-4 {
+		width: 33.33%;
+	}
+
+	.col-sm-5 {
+		width: 41.66%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.33%;
+	}
+
+	.col-sm-8 {
+		width: 66.66%;
+	}
+
+	.col-sm-9 {
+		width: 75%;
+	}
+
+	.col-sm-10 {
+		width: 83.33%;
+	}
+
+	.col-sm-11 {
+		width: 91.66%;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+}
